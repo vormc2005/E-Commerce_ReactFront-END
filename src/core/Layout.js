@@ -1,5 +1,6 @@
 import React, {Fragment} from 'react'
 import Menu from './Navbar'
+import "../styles.css"
 
 const Layout = ({title="Title",
     description="Welcome to my APP",

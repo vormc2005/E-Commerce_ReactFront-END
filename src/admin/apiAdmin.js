@@ -40,7 +40,6 @@ export const createProduct=(userId, token, product)=>{
     })
 }
 //Get all categories for add product data and more
-
 export const getCategories=()=>{
     return fetch(`${API}/categories`,{
         method: "GET"
