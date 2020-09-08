@@ -11,7 +11,7 @@ import UserDashboard from './user/UserDashboard'
 import AdminDashboard from './user/AdminDashboard'
 import AddCategory from './admin/AddCategory'
 import AddProduct from './admin/AddProduct'
-
+import Product from './core/Product'
 
 
 function Routes() {
@@ -20,6 +20,7 @@ function Routes() {
             <Switch>
                
                 <Route path = "/signin" exact component={Signin}/>
+                <Route path = '/product/:productId' exact component={Product}/>
                 <Route path = "/signup" exact component={Signup}/>
                 <Route path = "/signout" exact component={Signout}/>
                 <Route path = "/" exact component={Home}/>

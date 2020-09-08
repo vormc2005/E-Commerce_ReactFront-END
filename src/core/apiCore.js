@@ -63,3 +63,28 @@ export const list= params =>{
         console.log(err)
     })
 }
+
+
+export const read=(productId)=>{
+    return fetch(`${API}/product/${productId}`,{
+        method: "GET"
+    })
+    .then(response=>{
+        return response.json()
+    })
+    .catch(err=>{
+        console.log(err)
+    })
+}
+
+export const listRealted=(productId)=>{
+    return fetch(`${API}/products/related/${productId}`,{
+        method: "GET"
+    })
+    .then(response=>{
+        return response.json()
+    })
+    .catch(err=>{
+        console.log(err)
+    })
+}
