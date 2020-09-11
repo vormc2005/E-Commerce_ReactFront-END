@@ -38,7 +38,7 @@ function Menu({history}) {
                         className="nav-link" 
                         to ="/cart" 
                         style={isActive(history, '/cart')}>
-                                Cart 
+                                Cart {" "}
                             <sup>
                                 <small 
                                     className="cart-badge">

@@ -15,7 +15,7 @@ const Card =({
     cartUpdate=false,
     showRemoveProductButton= false,
     setRun = f =>f,
-    run=undefined
+    run = undefined
 
 } )=> {
 
@@ -37,11 +37,10 @@ const Card =({
         )
     }
 
-    const addToCart = ()=>{
-            addItem(product,()=>{ 
-            setRedirect(true)
-        })
-    }
+    const addToCart = () => {
+        // console.log('added');
+        addItem(product, setRedirect(true));
+      };
 
     const shouldRedirect = redirect=>{
         if(redirect){
