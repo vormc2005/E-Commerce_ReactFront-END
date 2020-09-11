@@ -5,7 +5,7 @@ const ShowImage=({item, url})=> {
 
 
     return (
-        <div className="product-img">
+        <div className="product-img col-md-8 offset-md-2"  style={{height:"30vh", width:"20vh"}}>
             {/* See back end for the correct route */}
             <img 
             src={`${API}/${url}/photo/${item._id}`} 

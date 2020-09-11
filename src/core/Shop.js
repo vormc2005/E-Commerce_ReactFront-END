@@ -102,7 +102,7 @@ const handleFilters = (filters, filterBy)=>{
     
 
     return (
-        <Layout title='Shop page' description='Search for books of your choice' className="container-fluid">
+        <Layout title='SHOP-OUR-SHOP' description='Search for tires of your choice' className="container-fluid">
        
        <div className="row">
     <div className="col-4">
@@ -127,7 +127,7 @@ const handleFilters = (filters, filterBy)=>{
                <h2 className="mb-4">Products</h2>
                <div className="row">
                         {filteredResults.map((product, i) => (
-                           <div className="col-4 mb-3">
+                           <div className="col-12 col-md-4 mb-3">
                                 <Card  key={i} product={product} />
                            </div>
                               

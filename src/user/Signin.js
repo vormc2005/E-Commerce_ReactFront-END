@@ -7,8 +7,8 @@ const Signin = () =>{
 
 const [values, setValues]= useState({
    
-    email:'dmitry@gmail.com',
-    password:'123456',
+    email:'cash@gmail.com',
+    password:'Test123',
     error:"", 
     loading: false,
     redirectToRefferer: false
@@ -101,8 +101,12 @@ const signUpForm = ()=>(
 
     return (
         <Layout title ='Signup Page' description='Please signup'>
+            <div style={{textAlign:"center"}}>
 
-
+            <h3>To view admin part of the site, please use following redentials</h3>
+            <p>email : admin@gmail.com</p>
+            <p>password : Test123</p>
+            </div>
         <div className="container col-md-6 offset-md-3">
         {showError()}
         {showLoading()}       

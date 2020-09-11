@@ -112,7 +112,7 @@ const Card =({
 
     return (
         <>
-       
+            
             <div className="card">
             <div className="card-header name">{product.name}</div>
             <div className="card-body">
@@ -135,6 +135,7 @@ const Card =({
                
             </div>
             </div>
+           
         
         </>
     )

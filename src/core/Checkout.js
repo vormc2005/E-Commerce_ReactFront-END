@@ -143,9 +143,15 @@ const Checkout = ({ products, setRun = f => f, run = undefined }) => {
                         }}
                         onInstance={instance => (data.instance = instance)}
                     />
+                    <div style={{background:"#E5BCB3", textAlign:"center"}}>
+                        <p>Please use follofing CC# to test</p>
+                        <p>4111 1111 1111 1111</p>
+                        <p>Exp.date: any date in teh future</p>
+                    </div>
                     <button onClick={buy} className="btn btn-success btn-block">
                         Pay
                     </button>
+                    
                 </div>
             ) : null}
         </div>
